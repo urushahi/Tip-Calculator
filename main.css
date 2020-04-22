@@ -1,0 +1,10 @@
+#tipOutput {
+  display: none;
+}
+.calculator {
+  padding: 2rem;
+  border-radius: 25px;
+  background: linear-gradient(115deg, #2b063a, #a085b5);
+  margin-top: 3rem;
+  color: white;
+}

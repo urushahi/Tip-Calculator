@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip Calculator</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="./main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 mx-auto">
+          <div class="calculator">
+            <h1>Tip Calculator</h1>
+            <form id="tip-form" class="pb-5 border-bottom">
+              <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">Rs.</div>
+                  </div>
+                  <input
+                    type="number"
+                    class="form-control"
+                    name="totalBill"
+                    id="totalBill"
+                    placeholder="Enter Your Total Bill"
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="formControlRange">Tip:</label>
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="tipOutput"></span>
+                </div>
+                <input
+                  type="range"
+                  class="form-control-range"
+                  id="tipValue"
+                  min="0"
+                  max="100"
+                />
+              </div>
+            </form>
+
+           
+            <h1 class="text-center pt-5">Results</h1>
+            <div class="form-group">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">Tip Amount</div>
+                </div>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="tipAmt"
+                  id="tipAmt"
+                  disabled
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">Total Bill with tip</div>
+                </div>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="finalAmt"
+                  id="finalAmt"
+                  disabled
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
